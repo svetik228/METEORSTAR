@@ -1,4 +1,4 @@
-<template name="task">
+﻿<template name="task">
   <li class="{{#if checked}}checked{{/if}} {{#if private}}private{{/if}}">
     <button class="delete">&times;</button>
  
@@ -7,10 +7,8 @@
 {{#if isOwner}}
       <button class="toggle-private">
         {{#if private}}
-          Private
-        {{else}}
-          Public
-        {{/if}}
+          Скрыта {{else}}
+          Показана {{/if}}
       </button>
     {{/if}}    
 
